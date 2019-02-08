@@ -43,8 +43,7 @@ public class MyClassTest {
 	public void myFirstTest() {
 
 		driver.findElement(By.linkText("Enter the Store")).click();
-
-		for(int i=0; i<5; i++) {			
+		
 			driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='?'])[1]/following::img[10]")).click();
 			driver.findElement(By.linkText("FI-SW-01")).click();
 			driver.findElement(By.linkText("EST-1")).click();
@@ -118,7 +117,6 @@ public class MyClassTest {
 			driver.findElement(By.linkText("Confirm")).click();
 			driver.findElement(By.linkText("Return to Main Menu")).click();
 			driver.findElement(By.linkText("Sign Out")).click();
-		}
 	}
 
 
